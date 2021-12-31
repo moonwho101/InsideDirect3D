@@ -1,0 +1,304 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "d3dres.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+APPMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Frame Rate\tTab",            MENU_STATS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tESC",                  MENU_EXIT
+    END
+    POPUP "Devices"
+    BEGIN
+        MENUITEM "",                            MENU_FIRST_DRIVER
+    END
+    POPUP "&Render"
+    BEGIN
+        MENUITEM "&Flat\tF2",                   MENU_FLAT
+        MENUITEM "&Gouraud\tF3",                MENU_GOURAUD
+        MENUITEM SEPARATOR
+        MENUITEM "&Dithering\tCtrl+D",          MENU_DITHERING
+        MENUITEM "&Anti-aliasing\tCtrl+A",      MENU_ANTIALIAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Z Buffer\tF5",               MENU_ZBUFFER
+        MENUITEM "&Clears\tF6",                 MENU_CLEARS
+    END
+    POPUP "&Lighting"
+    BEGIN
+        MENUITEM "&Specular Highlights\tF7",    MENU_SPECULAR
+    END
+    POPUP "&Textures"
+    BEGIN
+        MENUITEM "Perspective &Correct\tF10",   MENU_PERSPCORRECT
+        MENUITEM SEPARATOR
+        MENUITEM "P&oint Filtering\tCtrl+O",    MENU_POINT_FILTER
+        MENUITEM "Bi-&Linear Filtering\tCtrl+L", MENU_LINEAR_FILTER
+        MENUITEM SEPARATOR
+    END
+    POPUP "&Modes"
+    BEGIN
+        MENUITEM "&Fullscreen\tAlt+Enter",      MENU_FULLSCREEN
+        MENUITEM SEPARATOR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "2D Map Editor",               ID_TOOLS_MAPEDITOR
+        MENUITEM "Object Editor",               ID_TOOLS_OBJECTEDITOR
+        , GRAYED
+        MENUITEM "Texture Manager",             ID_TOOLS_TEXTUREMANAGER
+        , GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Map Stats",                   ID_TOOLS_MAPSTATS, GRAYED
+        MENUITEM "3D Caps",                     ID_TOOLS_3DCAPS, GRAYED
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Contents",                    ID_HELP_CONTENTS, GRAYED
+        MENUITEM "Using the 3D Map Editor",     ID_HELP_3DEDITOR, GRAYED
+        MENUITEM "About",                       MENU_ABOUT
+    END
+END
+
+EDITORMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",                         ID_FILE_NEW
+        MENUITEM "Open",                        ID_FILE_OPEN
+        MENUITEM "Save",                        ID_FILE_SAVE
+        MENUITEM "Save As",                     ID_FILE_SAVEAS, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Update",                      ID_VIEW_UPDATE
+        MENUITEM "Zoom In",                     ID_VIEW_ZOOM_IN
+        MENUITEM "Zoom  Out",                   ID_VIEW_ZOOM_OUT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "Undo",                        ID_EDIT_UNDO
+        MENUITEM "Delete",                      ID_EDIT_DELETE
+    END
+    POPUP "Mode"
+    BEGIN
+        MENUITEM "Auto Road",                   ID_MODE_AUTOROAD
+        MENUITEM "Manual",                      ID_MODE_MANUAL
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "Contents",                    ID_HELP_CONTENTS, GRAYED
+        MENUITEM "Using the 2D Map Editor",     ID_HELP_2DEDITOR, GRAYED
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+APPICON                 ICON    DISCARDABLE     "d3d.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+APPACCEL ACCELERATORS DISCARDABLE 
+BEGIN
+    "A",            MENU_ANTIALIAS,         VIRTKEY, CONTROL, NOINVERT
+    "D",            MENU_DITHERING,         VIRTKEY, CONTROL, NOINVERT
+    "F",            MENU_FOG,               VIRTKEY, CONTROL, NOINVERT
+    "L",            MENU_LINEAR_FILTER,     VIRTKEY, CONTROL, NOINVERT
+    "O",            MENU_POINT_FILTER,      VIRTKEY, CONTROL, NOINVERT
+    "P",            MENU_POINT,             VIRTKEY, CONTROL, NOINVERT
+    "S",            MENU_SOLID,             VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      MENU_EXIT,              VIRTKEY, NOINVERT
+    VK_F1,          MENU_ABOUT,             VIRTKEY, NOINVERT
+    VK_F10,         MENU_PERSPCORRECT,      VIRTKEY, NOINVERT
+    VK_F2,          MENU_FLAT,              VIRTKEY, NOINVERT
+    VK_F3,          MENU_GOURAUD,           VIRTKEY, NOINVERT
+    VK_F4,          MENU_PHONG,             VIRTKEY, NOINVERT
+    VK_F5,          MENU_ZBUFFER,           VIRTKEY, NOINVERT
+    VK_F6,          MENU_CLEARS,            VIRTKEY, NOINVERT
+    VK_F7,          MENU_SPECULAR,          VIRTKEY, NOINVERT
+    VK_F8,          MENU_TEXTURE_TOGGLE,    VIRTKEY, NOINVERT
+    VK_F9,          MENU_TEXTURE_SWAP,      VIRTKEY, NOINVERT
+    VK_NEXT,        MENU_NEXT_MODE,         VIRTKEY, ALT, NOINVERT
+    VK_PRIOR,       MENU_PREVIOUS_MODE,     VIRTKEY, ALT, NOINVERT
+    VK_RETURN,      MENU_FULLSCREEN,        VIRTKEY, ALT, NOINVERT
+    VK_TAB,         MENU_STATS,             VIRTKEY, NOINVERT
+    "W",            MENU_WIREFRAME,         VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+APPABOUT DIALOG DISCARDABLE  0, 0, 343, 236
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Info"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "Road Rage Map Editor v1.1        Written by William Chin        Date: 13th July 1999",
+                    IDC_STATIC,5,5,335,11,SS_CENTERIMAGE | SS_SUNKEN
+    PUSHBUTTON      "Credits",IDC_BUTTON1,5,20,50,14
+    PUSHBUTTON      "RR Stats",IDC_BUTTON2,55,20,50,14
+    PUSHBUTTON      "Controls",IDC_BUTTON3,105,20,50,14
+    PUSHBUTTON      "Legal Info",IDC_BUTTON4,155,20,50,14
+END
+
+EDITOR DIALOGEX 0, 0, 421, 266
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE
+CAPTION "2D Map Editor"
+MENU EDITORMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    SCROLLBAR       IDC_SCROLLBAR1,357,20,9,216,SBS_VERT | NOT WS_VISIBLE
+    SCROLLBAR       IDC_SCROLLBAR2,0,236,357,8,NOT WS_VISIBLE
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 186, 92
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""d3dres.h""\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "APPABOUT", DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        BOTTOMMARGIN, 223
+    END
+
+    "EDITOR", DIALOG
+    BEGIN
+        RIGHTMARGIN, 419
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 244
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 85
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+BITMAP1                 BITMAP  DISCARDABLE     "bitmap1.bmp"
+TOOLBAR                 BITMAP  DISCARDABLE     "Toolbar.bmp"
+BITMAP2                 BITMAP  DISCARDABLE     "bmp00001.bmp"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

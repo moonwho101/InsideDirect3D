@@ -1,0 +1,131 @@
+
+FILENAME modellist.dat
+
+PLAYER		0 MD2  MODEL_ID 0  ..\models\players\malignus\malignus.md2		TEX 26  POS 635 13 720  ANGLE 0	SCALE 0.50   NO_EXTERNAL_WEP
+
+
+OPGUN		0 MD2  MODEL_ID 1  ..\models\weapons\wmp5.md2			TEX 3  SCALE 0.45
+OPGUN		1 MD2  MODEL_ID 2  ..\models\weapons\wm4.md2			TEX 3  SCALE 0.45
+
+
+YOURGUN		0 MD2  MODEL_ID 3  ..\models\weapons\mp5.md2			TEX 15  POS -1 11 0	   ANGLE 15		SCALE 0.4
+YOURGUN		1 MD2  MODEL_ID 4  ..\models\weapons\m4.md2			TEX 15  POS -1 11 0	   ANGLE 15		SCALE 0.4
+
+CAR			0 3DS  MODEL_ID 5  ..\models\cars\jeep2.3ds				TEX 26  POS 700 0 500  ANGLE 0	SCALE 0.05
+
+
+
+END_FILE
+
+
+** EVERYTHING BELOW "END_FILE" IS IGNORED **
+
+
+Desciption of this file format :
+
+
+COMMANDS :
+
+
+PLAYER   used to add new male/female/robot characters to the game
+
+CAR		 used to add new cars/tanks/motorbikes etc
+
+YOURGUN	 used to add new weapons for the player's own view (the one's 
+         you see with just a couple of arms attached to the weapon).
+
+OPGUN    used to add new weapons for your opponents/enemies guns 
+         (the weapon model you see an opponent carrying)
+
+DEBUG    This command will place a model anywhere on the map, and will 
+         ignore any gameplay rules that apply to that type of model.
+		 Also you can test out the models aninimation sequences by 
+		 pressing keys 0 to 9.
+
+
+
+ADDING A NEW MODEL :  
+
+Example:
+
+If you only have one car defined like this :
+
+CAR			0 MD2 MODEL_ID 1 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+
+
+just copy the last car line, and paste it underneath like this :
+
+CAR			0 MD2 MODEL_ID 1 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+CAR			0 MD2 MODEL_ID 1 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+
+Now you need to make a few changes to the numbers and filenames
+
+change the 0 to 1 (note every car must have a different car number like this :
+
+CAR			0 MD2 MODEL_ID 1 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+CAR			1 MD2 MODEL_ID 1 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+
+If the car is an MD2 then leave the second parameter the way it is. 
+If you want to add a 3DS model then change it to "3DS" instead of "MD2", with out the quote marks.
+
+Next change the number after "MODEL_ID" to next next available model id. 
+So if your modellist.dat file looks like this :
+
+
+PLAYER		0 MD2 MODEL_ID 0 models\players\male\male.md2   TEX 24  POS 900 0 458  ANGLE 190	SCALE 0.4  USE_EXTERNAL_WEP
+CAR			0 MD2 MODEL_ID 1 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+YOURGUN		0 MD2 MODEL_ID 2 models\weapons\m4.md2			TEX 25  POS 0 0 0	   ANGLE 0		SCALE 0.4
+YOURGUN		1 MD2 MODEL_ID 3 models\weapons\mp5.md2			TEX 26  POS 0 0 0	   ANGLE 0		SCALE 0.4
+YOURGUN		2 MD2 MODEL_ID 4 models\weapons\flamer.md2		TEX 27  POS -5 -2 -5   ANGLE 0		SCALE 0.4
+OPGUN		0 MD2 MODEL_ID 5 models\weapons\wm4.md2			TEX 28  SCALE 0.4
+OPGUN		1 MD2 MODEL_ID 6 models\weapons\wmp5.md2		TEX 29  SCALE 0.4
+OPGUN		2 MD2 MODEL_ID 7 models\weapons\wmp5.md2		TEX 27  SCALE 0.4
+DEBUG		0 MD2 MODEL_ID 8 models\cars\neobike.md2		TEX 37  POS 800 0 500  ANGLE 0		SCALE 0.4
+DEBUG		1 MD2 MODEL_ID 9 models\cars\jeep.md2			TEX 30  POS 700 0 500  ANGLE 0		SCALE 0.5
+DEBUG		2 MD2 MODEL_ID 10 models\aircraft\heli.md2		TEX 31  POS 660 3 800  ANGLE 0		SCALE 0.5
+
+
+11 would be the available model id. So you should have this in the cars bit :
+
+CAR			0 MD2 MODEL_ID 1  models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+CAR			1 MD2 MODEL_ID 11 models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+
+
+Now change the model name and file path ot it:
+If you wanted to add the Neobike for example, this is what you'd have
+
+CAR			0 MD2 MODEL_ID 1  models\cars\jeep.md2			TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+CAR			1 MD2 MODEL_ID 11 models\cars\neobike.md2		TEX 30  POS 700 0 502  ANGLE 250	SCALE 0.4
+
+
+Now change the number after "TEX", which is your texture number as defined in the "textures.dat" file
+If you not quite sure about this try leaving the number as it is and see what happens, then changing it 
+to something else, like the number of a player skin etc.
+
+After adding a new texture to "textures.dat" you may end up with this
+
+CAR			1 MD2 MODEL_ID 11 models\cars\neobike.md2		TEX 37  POS 700 0 502  ANGLE 250	SCALE 0.4
+
+
+37 maybe the texture number of the last texture you added ie the neobike skin
+
+Try altering the numbers after POS, SCALE by small amounts and see what happens, 
+and add or subtract 90 from ANGLE and see what happens when you run RR.
+
+
+NOTES :
+
+model ID's must be unique
+
+ANGLE must be a whole and positive numver between 0 and 360
+
+To use a new texture you must first add it to the "textures.dat" file
+
+Every model can have it's own different scale. The smaller the scale the smaller the model will appear
+
+Models added with the DEBUG command will not obey game play rules set by RR, they are so you can place
+any model into the map without the need to change the RR code, or use the RR map editor. Also you can 
+test out your new models animation sequences and see what they look like in game, with a minimum of effort.
+
+Every Model added with the DEBUG command must have a ".seq" file which contains info on what frames are 
+to be played back for a given animation sequence.

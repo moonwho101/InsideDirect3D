@@ -1,0 +1,19 @@
+This is just a short text on the new stuff I put in. It is most likely not complete, and it may include things already there
+
+Added in aliging. Good for VWeps. (see below for short instructions)
+Fixed Drawing of triangle when being drawn
+Made directories stick for the life of the program. There is one directory kept for the models and skins, and another kept for any imported/exported meshes.
+Fixed a fairly large error in the Texture drawing. May solve a large amount of the errors people have been getting
+And some other stuff
+
+Aligning function
+
+The button for this is onthe Bones menu, only because it had the most space free.
+
+To use it, do the following:
+
+Select the faces that you wish to align, using face mode. Pick a frame, and move those faces to the required lcoation. Go to vertex mode, and pick four vertices. These will be the reference points used to calculate the new position. Keep these four verts as far away from each other as possible. If you are applying this to a .md2, there will be a loss of accuracy in the verts, thus distorting the object when positioned. Goto the bones panel, and push align.
+
+This is not undo-able
+
+

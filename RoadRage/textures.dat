@@ -1,0 +1,95 @@
+
+AddTexture	..\textures\backgnd.ppm
+Alias 		0	background		OPAQUE	WHOLE
+
+AddTexture	..\textures\road2.ppm			
+Alias 		1	road2			OPAQUE	WHOLE
+
+AddTexture	..\textures\lamppave.ppm			
+Alias 		2	lamp			OPAQUE	TL_QUAD
+Alias 		3	lamp_post		OPAQUE	TR_QUAD
+Alias 		4	curb			OPAQUE	LR_QUAD
+
+AddTexture	..\textures\pave1.ppm
+Alias 		5	pave1		OPAQUE	WHOLE
+
+AddTexture	..\textures\zebra.ppm			
+Alias		6	zebra			OPAQUE	WHOLE
+
+AddTexture  ..\textures\roadsign.ppm			
+Alias		7	road_sign		OPAQUE	TL_TRI
+	
+AddTexture  ..\textures\island.ppm			
+Alias		8	island_side		OPAQUE	LEFT_HALF
+Alias		9	island_front	OPAQUE	RIGHT_HALF
+
+AddTexture  ..\textures\petrol.ppm			
+Alias		10	petrol			OPAQUE	WHOLE
+
+AddTexture  ..\textures\petrol2.ppm			
+Alias		11	petrol2			OPAQUE	TOP_HALF	
+
+AddTexture  ..\textures\traffic.ppm			
+Alias		12	traffic_light	OPAQUE	LEFT_HALF
+
+AddTexture  ..\textures\grass.ppm			
+Alias		13	grass			OPAQUE	WHOLE
+
+AddTexture  ..\textures\gun.ppm				
+Alias		14	gun				OPAQUE	WHOLE
+
+AddTexture  ..\models\weapons\mp5.ppm				
+Alias		15	MP5				OPAQUE	WHOLE
+	
+AddTexture  ..\textures\redbrick.ppm				
+Alias		16	redbrick		OPAQUE	WHOLE
+
+AddTexture  ..\textures\door3.ppm				
+Alias		17	door3			OPAQUE	WHOLE
+
+AddTexture  ..\textures\mahog.ppm				
+Alias		18	mahog			OPAQUE	WHOLE
+
+AddTexture  ..\textures\plastic1.ppm				
+Alias		19	plastic1		OPAQUE	WHOLE
+	
+AddTexture  ..\textures\window.ppm				
+Alias		20	window			AlphaTransparent	WHOLE
+
+AddTexture  ..\textures\rooftile.ppm				
+Alias		21	rooftile		OPAQUE	WHOLE
+
+AddTexture  ..\textures\conctan.ppm				
+Alias		22	conctan			OPAQUE	WHOLE
+
+AddTexture  ..\textures\flrtile1.ppm				
+Alias		23	flrtile1			OPAQUE	WHOLE
+
+AddTexture  ..\textures\car1.ppm				
+Alias		24	car1  			OPAQUE	WHOLE
+
+AddTexture  ..\models\cars\lrskin5.ppm				
+Alias		25	lrskin5			OPAQUE	WHOLE
+
+AddTexture  ..\models\players\malignus\malignus.ppm				
+Alias		26	malignus		OPAQUE	WHOLE
+	
+AddTexture  ..\textures\stonewal.ppm				
+Alias		27	stonewal  			OPAQUE	WHOLE
+
+AddTexture  ..\textures\window2.ppm				
+Alias		28	window2  			AlphaTransparent	WHOLE
+
+AddTexture	..\textures\road1.ppm			
+Alias 		29	road1			OPAQUE	WHOLE
+
+AddTexture	..\textures\road2.ppm			
+Alias 		30	road1			OPAQUE	WHOLE
+
+AddTexture	..\models\players\cronex\cronex.ppm			
+Alias 		31	cronex			OPAQUE	WHOLE
+																								
+END_FILE
+
+** EVERYTHING BELOW "END_FILE" IS IGNORED **
+

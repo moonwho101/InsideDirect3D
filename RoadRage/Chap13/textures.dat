@@ -1,0 +1,96 @@
+
+AddTexture	..\textures\backgnd.bmp
+Alias 		0	background		OPAQUE	WHOLE
+
+AddTexture	..\textures\crosshair.bmp
+Alias 		1	background		OPAQUE	WHOLE
+
+AddTexture	..\textures\road2.bmp			
+Alias 		2	road2			OPAQUE	WHOLE
+
+AddTexture	..\textures\lamppave.bmp			
+Alias 		3	lamp			OPAQUE	TL_QUAD
+Alias 		4	lamp_post		OPAQUE	TR_QUAD
+Alias 		5	curb			OPAQUE	LR_QUAD
+
+AddTexture	..\textures\pave1.bmp
+Alias 		6	pave1		OPAQUE	WHOLE
+
+AddTexture	..\textures\zebra.bmp			
+Alias		7	zebra			OPAQUE	WHOLE
+
+AddTexture  ..\textures\roadsign.bmp			
+Alias		8	road_sign		OPAQUE	TL_TRI
+	
+AddTexture  ..\textures\island.bmp			
+Alias		9	island_side		OPAQUE	LEFT_HALF
+Alias		10 island_front	OPAQUE	RIGHT_HALF
+
+AddTexture  ..\textures\petrol.bmp			
+Alias		11	petrol			OPAQUE	WHOLE
+
+AddTexture  ..\textures\petrol2.bmp			
+Alias		12	petrol2			OPAQUE	TOP_HALF	
+
+AddTexture  ..\textures\traffic.bmp			
+Alias		13	traffic_light	OPAQUE	LEFT_HALF
+
+AddTexture  ..\textures\grass.bmp			
+Alias		14	grass			OPAQUE	WHOLE
+
+AddTexture  ..\textures\gun.bmp				
+Alias		15	gun				OPAQUE	WHOLE
+
+AddTexture  ..\models\weapons\mp5.bmp				
+Alias		16	MP5				OPAQUE	WHOLE
+	
+AddTexture  ..\textures\redbrick.bmp				
+Alias		17	redbrick		OPAQUE	WHOLE
+
+AddTexture  ..\textures\door3.bmp				
+Alias		18	door3			OPAQUE	WHOLE
+
+AddTexture  ..\textures\mahog.bmp				
+Alias		19	mahog			OPAQUE	WHOLE
+
+AddTexture  ..\textures\plastic1.bmp				
+Alias		20	plastic1		OPAQUE	WHOLE
+	
+AddTexture  ..\textures\window.bmp				
+Alias		21	window			AlphaTransparent	WHOLE
+
+AddTexture  ..\textures\rooftile.bmp				
+Alias		22	rooftile		OPAQUE	WHOLE
+
+AddTexture  ..\textures\conctan.bmp				
+Alias		23	conctan			OPAQUE	WHOLE
+
+AddTexture  ..\textures\flrtile1.bmp				
+Alias		24	flrtile1			OPAQUE	WHOLE
+
+AddTexture  ..\textures\car1.bmp				
+Alias		25	car1  			OPAQUE	WHOLE
+
+AddTexture  ..\models\cars\lrskin5.bmp				
+Alias		26	lrskin5			OPAQUE	WHOLE
+
+AddTexture  ..\models\players\malignus\malignus.bmp				
+Alias		27	malignus		OPAQUE	WHOLE
+	
+AddTexture  ..\textures\stonewal.bmp				
+Alias		28	stonewal  			OPAQUE	WHOLE
+
+AddTexture  ..\textures\window2.bmp				
+Alias		29	window2  			AlphaTransparent	WHOLE
+
+AddTexture	..\textures\road1.bmp			
+Alias 		30	road1			OPAQUE	WHOLE
+
+
+
+
+																								
+END_FILE
+
+** EVERYTHING BELOW "END_FILE" IS IGNORED **
+

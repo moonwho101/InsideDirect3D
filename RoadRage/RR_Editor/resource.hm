@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by d3dmain.rc
+//
+#define HIDC_SCROLLBAR2                 0xffff040e

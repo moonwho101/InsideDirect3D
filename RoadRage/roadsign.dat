@@ -1,0 +1,71 @@
+
+OBJECT  road_sign
+
+TEXTURE	lamp_post
+
+VERTEX_LIST 19
+
+ 0.50   0.00  -0.50
+-0.50   0.00  -0.50
+-0.50  30.00  -0.50
+ 0.50  30.00  -0.50
+
+-0.50   0.00   0.50
+ 0.50   0.00   0.50
+ 0.50  30.00   0.50
+-0.50  30.00   0.50
+
+-0.50   0.00  -0.50
+-0.50   0.00   0.50
+-0.50  30.00   0.50
+-0.50  30.00  -0.50
+
+ 0.50   0.00   0.50
+ 0.50   0.00  -0.50
+ 0.50  30.00  -0.50
+ 0.50  30.00   0.50
+
+ 0.00  40.00   0.00
+ 5.00  30.00   0.00
+-5.00  30.00   0.00
+
+
+FACE_LIST	19
+
+TRI_STRIP	4	
+TEXTURE		road_sign 
+INDEX		0	0.0  0.0
+INDEX		1	0.0  1.0
+INDEX		2	1.0  0.0
+INDEX		3	1.0  1.0
+
+TRI_STRIP	4	
+TEXTURE		road_sign 
+INDEX		4	0.0  0.0
+INDEX		5	0.0  0.0
+INDEX		6	0.0  0.0
+INDEX		7	0.0  0.0
+
+TRI_STRIP	4	
+TEXTURE		road_sign 
+INDEX		8	0.0  0.0
+INDEX		9	0.0  0.0
+INDEX		10	0.0  0.0
+INDEX		11	0.0  0.0
+
+TRI_STRIP	4	
+TEXTURE		road_sign 
+INDEX		12	0.0  0.0
+INDEX		13	0.0  0.0
+INDEX		14	0.0  0.0
+INDEX		15	0.0  0.0	
+
+TRI			3	
+TEXTURE		road_sign 
+INDEX		16	0.0  0.0
+INDEX		17	0.0  0.0
+INDEX		18	0.0  0.0
+
+
+
+END_FILE
