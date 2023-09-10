@@ -1,5 +1,5 @@
 # Inside Direct3D by Peter J. Kovach 
-# Code by by William Chin
+# Code by William Chin
 
 Source code by William Chin from CD-ROM 
 
