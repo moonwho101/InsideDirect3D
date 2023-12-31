@@ -39,3 +39,14 @@ Topics covered:
 * multiplayer gaming
 * RoadRage (sample custom gaming engine)
 
+Title	Inside Direct3D
+ITPro collection
+Microsoft programming series
+Author	Peter J. Kovach
+Edition	illustrated
+Publisher	Microsoft Press, 2000
+ISBN	0735606137, 9780735606135
+Length	426 pages
+
+
+
